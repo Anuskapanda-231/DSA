@@ -3,12 +3,12 @@ class Solution {
         int minprice = Integer.MAX_VALUE;
         int maxprofit =0;
 
-        for (int i=0;i< prices.length;i++){
-           if( prices[i]<minprice ){
-              minprice= prices[i];
+        for (int price: prices){
+           if( price<minprice ){
+              minprice= price;
             }
 
-           int  profit = prices[i]-minprice;
+           int  profit = price-minprice;
 
            if(profit> maxprofit){
             maxprofit=profit;
